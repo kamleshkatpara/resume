@@ -1,0 +1,113 @@
+@import "https://fonts.googleapis.com/css2?family=Nunito&display=swap";
+
+    body {
+        font-family: verdana, Arial, sans-serif;
+        color: #232f3e;
+        max-width: 850px;
+        font-size: 14px;
+        margin: auto;
+        background: #fff;
+        padding: 10px
+    }
+
+    h1 {
+        font-size: 3em;
+        text-align: center;
+        margin-bottom: .5em;
+        text-transform: uppercase;
+        font-weight: 400
+    }
+
+    h2 {
+        color: #f90;
+        text-transform: uppercase;
+        margin-top: 1em;
+        font-weight: 400
+    }
+
+    h3 {
+        font-weight: 700;
+        text-align: left;
+        margin-left: 0;
+        font-size: 1em
+    }
+
+    h4 {
+        font-size: 1em;
+        font-weight: 700
+    }
+
+    h5 {
+        text-align: center
+    }
+
+    h6 {
+        font-weight: 400;
+        text-align: right
+    }
+
+    dt {
+        float: left;
+        clear: left;
+        width: 13%;
+        font-weight: 700
+    }
+
+    dd {
+        margin-top: 1em;
+        margin-left: 16%;
+        margin-bottom: 2em
+    }
+
+    dd p {
+        text-align: justify
+    }
+
+    a {
+        text-decoration: none;
+        color: #538083
+    }
+
+    a:hover,
+    a:active {
+        background-color: #538083;
+        color: #fff;
+        text-decoration: none;
+        text-shadow: 1px 1px 1px #333
+    }
+
+    hr {
+        color: #a6a6a6
+    }
+
+    ul {
+        list-style-type: circle
+    }
+
+    @media print {
+        body {
+            font-family: Verdana, Helvetica, sans-serif;
+            max-width: 850px;
+            font-size: 14px
+        }
+
+        h1,
+        h2,
+        h3,
+        h4+ul,
+        dd,
+        dt {
+            page-break-after: avoid;
+            color: #232f3e
+        }
+
+        h6 {
+            display: none !important
+        }
+
+        a {
+            font-weight: 700;
+            text-decoration: none;
+            color: #000
+        }
+    }
